@@ -19,8 +19,6 @@ class MerchantValidationController {
 
     async getMerchantSession(req, res, next) {
         const { url } = req.body;
-        console.log("url", url);
-        console.log('APPLE_PAY_MERCHANT', APPLE_PAY_MERCHANT);
         return axios.post(
             url,
             APPLE_PAY_MERCHANT
