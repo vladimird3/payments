@@ -2,7 +2,7 @@ const express = require('express');
 require("dotenv").config();
 const cors = require('cors');
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 6050;
 const paymentRouter = require('./routes/paymentRoute');
 const merchantValidationRouter = require('./routes/merchantValidationRoute');
 const healthRouter = require('./routes/healthRoute');

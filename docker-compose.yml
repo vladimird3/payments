@@ -1,0 +1,6 @@
+version: '3'
+services:
+  ilml-payments-server:
+    build: ./
+    ports:
+      - "6050:6050"
