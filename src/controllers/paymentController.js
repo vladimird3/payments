@@ -1,4 +1,5 @@
-const Stripe = require('stripe')(process.env.SECKRET_KEY_STRIPE);
+const { SECRET_KEY_STRIPE }  = require("../constants");
+const Stripe = require('stripe')(SECRET_KEY_STRIPE);
 
 class PaymentController {
    async sendPayment (req, res) {
