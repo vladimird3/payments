@@ -1,0 +1,12 @@
+version: '3'
+services:
+  ilml-payments-server:
+    build: ./
+    ports:
+      - "6050:6050"
+    environment:
+      - API_VERSION
+      - PORT
+      - SECKRET_KEY_STRIPE
+      - DOMAIN_VERIFICATION_PATH
+      - DOMAIN_VERIFICATION_FILE
