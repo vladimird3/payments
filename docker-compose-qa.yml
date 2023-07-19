@@ -1,0 +1,11 @@
+version: '3.4'
+services:
+  ilml-payments-server:
+    image: silar/ilml-payments-server:1.18.0
+    ports:
+      - "6050:6050"
+    environment:
+      API_BASE_URL: https://api.ilivemylife.io/notifications/v1
+      API_VERSION: v1
+      PORT: "6050"
+      PROJECT_ID: "ilivemylifetest-8df1d"
