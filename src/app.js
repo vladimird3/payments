@@ -16,6 +16,6 @@ app.use(`/payments/${API_VERSION}/`, paymentRouter);
 app.use(`/payments/${API_VERSION}/`, merchantValidationRouter);
 app.use(`/payments/${API_VERSION}/health`, healthRouter);
 
-app.listen(PORT, ()=> {
+app.listen(PORT, '0.0.0.0', ()=> {
     console.log(`Server is up and running on ${PORT}`)
 })
